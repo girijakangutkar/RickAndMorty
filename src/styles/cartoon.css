@@ -1,0 +1,69 @@
+.container {
+  margin: 0 auto;
+  display: grid;
+  width: 70%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #ccc;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 3px 6px 10px 6px #ccc;
+}
+
+#ProfilePic {
+  width: 50%;
+  justify-self: center;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+#img {
+  justify-self: center;
+  align-content: center;
+  margin: 10px;
+}
+
+#ProfilePic img {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+
+#profileInfo h2,
+h3 {
+  width: fit-content;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+#profileInfo {
+  line-height: 12px;
+}
+
+.NavigationPanel {
+  position: fixed;
+  bottom: 10px;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.NavigationPanel button {
+  width: 50%;
+  padding: 5px;
+  background-color: #617834f9;
+  color: white;
+  font-weight: bolder;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.NavigationPanel button:disabled {
+  background-color: #61783493;
+}
