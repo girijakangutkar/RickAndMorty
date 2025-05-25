@@ -9,11 +9,11 @@ function RickAndMorty() {
     fetchCartoon();
   }, []);
 
+  const ApiKey = import.meta.env.VITE_API_KEY;
+
   async function fetchCartoon() {
     try {
-      const response = await fetch(
-        `https://rickandmortyapi.com/api/character?page=${currentPageRef.current}`
-      );
+      const response = await fetch(`${ApiKey}${currentPageRef.current}`);
       const data = await response.json();
       setCartoon(data.results);
     } catch (err) {
